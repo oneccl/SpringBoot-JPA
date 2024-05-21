@@ -1,0 +1,17 @@
+spring:
+  # 数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///day1207_jpa?serverTimezone=UTC
+    username: root
+    password: 123456
+
+  # jpa配置
+  jpa:
+    hibernate:
+      # update：更新数据库，不删除数据
+      ddl-auto: update
+    # 打印sql(开启日志)
+    show-sql: true
+
+
